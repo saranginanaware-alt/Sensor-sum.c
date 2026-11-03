@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void main()
+{
+    int s1, s2, s3, s4, s5;
+    int sum;
+
+    printf("Enter 5 sensor values (0 or 1):\n");
+
+    scanf("%d%d%d%d%d", &s1, &s2, &s3, &s4, &s5);
+
+    sum = s1 + s2 + s3 + s4 + s5;
+
+    printf("\nSensor Values:\n");
+    printf("%d %d %d %d %d", s1, s2, s3, s4, s5);
+
+    printf("\nSensor Sum = %d", sum);
+
+    if(sum == 0)
+        printf("\nLine Not Detected");
+    else if(sum == 5)
+        printf("\nAll Sensors Detect Line");
+    else
+        printf("\nLine Detected");
+}
